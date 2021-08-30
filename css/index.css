@@ -1,11 +1,4 @@
-@font-face {
-  font-family: "Poppin-Medium";
-  src: url("../assets/fonts/Poppins-Medium.ttf") format("ttf");
-}
 
-html, body {
-    height: 100%;
-}
 
 .container {
     height: 200px;
@@ -39,51 +32,4 @@ html, body {
     order:2;
     flex:2 2 5em;
     border:3px dotted blue
-}
-
-.component-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 204px;
-    height: 70px;
-    color: #ffffff;
-    font-family: "Poppins-Medium";
-    text-transform: uppercase;
-    background-color: #5e3bee;
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-}
-
-path {
-    transition: 0.5s ease-in-out;
-}
-
-.button span {
-    transition: 0.5s ease-in-out;
-    margin-left: 11px;
-}
-
-.button:hover span {
-    color: #5e3bee!important;
-    margin-left: 11px;
-}
-
-.button:hover {
-    color: #5e3bee;
-    background-color: #FFF;
-    border: 1px solid #5e3bee;
-}
-
-.button:hover path {
-    stroke: #5e3bee;
 }

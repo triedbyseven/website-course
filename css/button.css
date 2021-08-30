@@ -1,0 +1,57 @@
+html, body {
+    height: 100%;
+}
+
+.component-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 204px;
+    height: 70px;
+    color: #ffffff;
+    font-family: "Poppins-Medium";
+    text-transform: uppercase;
+    background-color: #5e3bee;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    /* transition: 0.5s ease-in-out; */
+}
+
+.button:hover {
+    color: #5e3bee;
+    background-color: #FFFFFF;
+    border: 3px solid #5e3bee;
+}
+
+.button:hover path {
+    /* transition: 0.5s ease-in-out; */
+    stroke: #5e3bee;
+}
+
+.button span {
+    /* transition: 0.5s ease-in-out; */
+    margin-left: 11px;
+}
+
+/* .button:hover span {
+    color: #5e3bee!important;
+    margin-left: 11px;
+} */
+
+/* .button:hover {
+    color: #5e3bee;
+    background-color: #FFF;
+    border: 1px solid #5e3bee;
+}
+
+.button:hover path {
+    stroke: #5e3bee;
+} */
