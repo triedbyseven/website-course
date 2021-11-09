@@ -1,0 +1,36 @@
+#tertiary.component-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#tertiary .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 124px;
+    height: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Poppins-Medium";
+    background-color: #5e3bee;
+    border: 5px #5e3bee;;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+#tertiary .button span {
+    margin-right: 10px;
+}
+
+#tertiary .button:hover path {
+    stroke: #5e3bee;
+}
+
+#tertiary .button:hover {
+    background-color: #ffffff;
+    border: 2px solid #5e3bee;
+    color: #5e3bee;
+}

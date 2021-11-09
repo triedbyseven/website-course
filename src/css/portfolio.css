@@ -1,0 +1,85 @@
+#portfolio .inner-container {
+  width: 100%;
+  padding: 0 26px;
+  box-sizing: border-box;
+} 
+
+#portfolio .heading3 {
+  font-size: 16px;
+  font-family: 'Poppins-Medium';
+  color: #5e3bee;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+#portfolio .heading3 h3 {
+  margin: 0;
+}
+
+#portfolio .heading4 { 
+  font-size: 34px;
+  font-family: 'Poppins-SemiBold';
+  color: #000;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+#portfolio .heading4 h4 {
+  margin: 0;
+}
+
+#portfolio .paragraph {
+  font-size: 16px;
+  font-family: 'Poppins-Regular';
+  color: #121212;
+  text-align: center;
+  line-height: 32px;
+  margin-bottom: 50px;
+}
+
+#portfolio p {
+  margin: 0;
+}
+
+#portfolio .selected-works {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#portfolio .selected-works .selected-work-card {
+  overflow: hidden;
+  max-width: 368px;
+  width: 100%;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+#portfolio .selected-works .selected-work-card .image {
+  width: 100%;
+  height: 245px;
+  background-color: #c4c4c4;
+}
+
+#portfolio .selected-works .selected-work-card .info {
+  padding: 22px 30px;
+}
+
+#portfolio .selected-works .selected-work-card .info .title {
+  font-size: 16px;
+  font-family: 'Poppins-Medium';
+  color: #000;
+  margin-bottom: 14px;
+}
+
+#portfolio .selected-works .selected-work-card .info .type {
+  opacity: 0.4;
+  font-size: 16px;
+  font-family: 'Poppins-Medium';
+  color: #000;
+}

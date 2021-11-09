@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Javascript Practice 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- Carousel View -->
+  <div id="slider" class="container">
+    <ul id="slider-container">
+      <li style="background-color: green">
+        <div class="number">1</div>
+        <img
+          src="https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80" />
+      </li>
+      <li style="background-color: blue">
+        <div class="number">2</div>
+        <img
+          src="https://images.unsplash.com/photo-1506719040632-7d586470c936?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" />
+      </li>
+      <li style="background-color: purple">
+        <div class="number">3</div>
+        <img
+          src="https://images.unsplash.com/photo-1471479917193-f00955256257?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3548&q=80" />
+      </li>
+      <li style="background-color: aqua">
+        <div class="number">4</div>
+        <img
+          src="https://images.unsplash.com/photo-1556448851-9359658faa54?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" />
+      </li>
+      <li style="background-color: violet">
+        <div class="number">5</div>
+        <img
+          src="https://images.unsplash.com/photo-1493238792000-8113da705763?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" />
+      </li>
+    </ul>
+    <!-- Carousel Navigation -->
+    <div class="navigationPrev">
+      <button id="prevButton" class="arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="#FFF">
+          <path fill-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="navigationRight">
+      <button id="nextButton" class="arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="#FFF">
+          <path fill-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+  <script src="modules/windowResize.js"></script>
+  <script src="modules/navigation.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
