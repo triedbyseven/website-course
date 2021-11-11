@@ -1,0 +1,9 @@
+#testimony.container {
+  padding: 116px 0;
+}
+
+#testimony .inner-container {
+  width: 100%;
+  padding: 0 26px;
+  box-sizing: border-box;
+}

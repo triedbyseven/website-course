@@ -1,0 +1,84 @@
+#card-testimony.container {
+    box-sizing: border-box;
+    max-width: 368px;
+    width: 100%;
+    background-color: #FFF;
+    padding: 44px 42px;
+    border-radius: 22px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+#card-testimony .inner-container {
+  
+}
+
+#card-testimony .review-stars {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 24px;
+}
+
+#card-testimony .review-stars .star {
+  width: 25px;
+  height: 25px;
+  margin-right: 7px;
+}
+
+#card-testimony .review-stars .star:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+#card-testimony .review {
+  font-size: 18px;
+  font-family: 'Poppins-Medium';
+  font-weight: 500;
+  color: #000;
+  line-height: 26px;
+  margin-bottom: 38px;
+}
+
+#card-testimony .review-author {
+  display: flex;
+  flex-direction: row;
+}
+
+#card-testimony .review-author .column-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+#card-testimony .review-author .column-left .circle {
+  width: 64px;
+  height: 64px;
+  background-color: #5e3bee;
+  border-radius: 100px;
+  margin-right: 18px;
+}
+
+#card-testimony .review-author .column-left .name {
+  font-size: 18px;
+  font-family: 'Poppins-Medium';
+  font-weight: 500;
+  color: #000;
+}
+
+#card-testimony .review-author .column-left .profession {
+  opacity: 0.3;
+  font-size: 18px;
+  font-family: 'Poppins-Regular';
+  font-weight: 400;
+  color: #000;
+}
+
+#card-testimony .review-author .column-right {
+  display: flex;
+  align-items: center;
+}
+
+#card-testimony .review-author .column-right .message {
+  width: 25px;
+  height: 25px;
+}
