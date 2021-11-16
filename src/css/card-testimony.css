@@ -22,6 +22,7 @@
 #card-testimony .review-stars .star {
   width: 25px;
   height: 25px;
+  color: #eec01c;
   margin-right: 7px;
 }
 
@@ -33,8 +34,9 @@
   font-size: 18px;
   font-family: 'Poppins-Medium';
   font-weight: 500;
-  color: #000;
   line-height: 26px;
+  letter-spacing: 2px;
+  color: #000;
   margin-bottom: 38px;
 }
 
@@ -46,7 +48,7 @@
 #card-testimony .review-author .column-left {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
 }
 
@@ -63,6 +65,7 @@
   font-family: 'Poppins-Medium';
   font-weight: 500;
   color: #000;
+  margin-bottom: 10px;
 }
 
 #card-testimony .review-author .column-left .profession {
@@ -79,6 +82,6 @@
 }
 
 #card-testimony .review-author .column-right .message {
-  width: 25px;
-  height: 25px;
+  width: 42px;
+  height: 38px;
 }
