@@ -1,0 +1,17 @@
+#cta.container {
+  width: 100%;
+  height: 464px;
+  background: url('../../assets/images/background-cta.png') #f9f9fc no-repeat center center;
+  background-size: cover;
+  border-radius: 22px;
+}
+
+#cta .paragraph {
+  font-size: 38px;
+  font-family: 'Poppins-SemiBold';
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  color: #333333;
+  margin-bottom: 28px;
+}
