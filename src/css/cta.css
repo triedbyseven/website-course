@@ -1,9 +1,15 @@
 #cta.container {
+  box-sizing: border-box;
   width: 100%;
-  height: 464px;
+  padding: 0 25px;
+  margin-bottom: 64px;
+}
+
+#cta .inner-container {
   background: url('../../assets/images/background-cta.png') #f9f9fc no-repeat center center;
   background-size: cover;
   border-radius: 22px;
+  padding: 73px 0;
 }
 
 #cta .paragraph {
@@ -12,6 +18,13 @@
   font-weight: 600;
   text-align: center;
   text-transform: capitalize;
+  line-height: 52px;
+  letter-spacing: 1.2px;
   color: #333333;
-  margin-bottom: 28px;
+  margin-bottom: 46px;
+}
+
+#cta .button-container {
+  display: flex;
+  justify-content: center;
 }
