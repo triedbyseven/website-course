@@ -1,0 +1,20 @@
+#clients.container {
+  margin: 70px 0 40px 0; /* 70 (bottom margin) - 30 (brand margin) */
+}
+
+#clients .inner-container {
+  padding: 0 32px;
+}
+
+#clients .brands {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#clients .brand {
+  box-sizing: border-box;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 30px;
+}
