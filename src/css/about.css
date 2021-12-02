@@ -1,0 +1,26 @@
+#about.container {
+  margin: 80px 0;
+}
+
+#about .inner-container {
+  padding: 0 0;
+}
+
+#about .t-heading3 {
+  padding: 0 50px;
+}
+
+#about .t-heading4-lg {
+  color: #333333 !important;
+  padding: 0 50px;
+}
+
+#about .t-paragraph-dark {
+  padding: 0 18px;
+  margin-bottom: 40px;
+}
+
+#about .button-container {
+  display: flex;
+  justify-content: center;
+}
