@@ -1,1 +1,22 @@
-#service 
+#service.container {
+  margin: 64px 0;
+}
+
+#service .inner-container {
+  padding: 0 28px;
+}
+
+#service .t-heading4-lg {
+  color: #333333 !important;
+}
+
+#service .t-paragraph-light {
+  margin-bottom: 40px;
+}
+
+#service .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,56 @@
+#card-services.container {
+  max-width: 368px;
+  width: 100%;
+  height: 280px;
+  border-radius: 22px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+#card-services .card-inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 65px;
+}
+
+#card-services .icon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 36px;
+}
+
+#card-services .icon .circle {
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  bottom: 0;
+}
+
+#card-services .icon .pentagon {
+  position: absolute;
+  z-index: 21;
+  left: 7px;
+  bottom: 10px;
+}
+
+#card-services .heading {
+  font-size: 20px;
+  font-family: 'Poppins-Medium';
+  font-weight: 500;
+  text-align: center;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+#card-services .description {
+  opacity: 0.7;
+  font-size: 16px;
+  font-family: 'Poppins-Regular';
+  font-weight: 400;
+  text-align: center;
+  line-height: 32px;
+  color: #121212;
+}
