@@ -6,6 +6,7 @@
 .content-container {
   width: 100%; 
   height: 100%;
+  margin-top: 50px;
 }
 
 .content {
@@ -33,58 +34,64 @@
   background-color: aqua;
 }
 
-#hamburger-menu.container {
+#navigation-bar.container {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 50px;
   border: 1px solid #000; 
+  background-color: #FFF;
 }
 
-#hamburger-menu .inner-container {
+#navigation-bar .inner-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 100%;
 }
 
-#hamburger-menu button {
+#navigation-bar button {
   width: 46px;
   height: 46px;
   background-color: transparent;
   border: none;
 }
 
-.overlay {
-  position: absolute;
+#hamburger-menu.overlay {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: #FFF;
+  transition: 0.25s ease-in-out;
 }
 
-.overlay-shown {
+#hamburger-menu.overlay-shown {
+  opacity: 1;
   visibility: visible;
 }
 
-.overlay-hidden {
+#hamburger-menu.overlay-hidden {
+  opacity: 0;
   visibility: hidden;
 }
 
-.overlay .header {
+#hamburger-menu .header {
   width: 100%;
   height: 50px;
-  border: 1px solid black;
   text-align: right;
 }
 
-.overlay .header button {
+#hamburger-menu .header button {
   width: 46px;
   height: 46px;
   background-color: transparent;
   border: none;
 }
 
-.overlay .navigation-container {
+#hamburger-menu .navigation-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,21 +99,22 @@
   height: 100%;
 }
 
-.overlay .navigation-container ul {
+#hamburger-menu .navigation-container ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.overlay .navigation-container li {
+#hamburger-menu .navigation-container li {
   font-size: 18px;
   font-family: 'Poppins-Regular';
   font-weight: 400;
   color: #000;
-  padding: 15px 10px;
+  padding: 15px 25px;
+  transition: 0.5s ease-in-out;
 }
 
-.overlay .navigation-container li.active {
+#hamburger-menu .navigation-container li.active {
   color: #FFF;
   background-color: #5e3bee;
   border-radius: 30px;

@@ -14,10 +14,11 @@
 
 <body style="background-color: #f7f7fa">
   <div class="component-container">
-    <div id="hamburger-menu" class="container">
+    <!-- Navigation Bar Start -->
+    <div id="navigation-bar" class="container">
       <div class="inner-container">
 
-        <button id="menu">
+        <button id="menu-open-button">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
@@ -25,10 +26,12 @@
 
       </div>
     </div>
+    <!-- Navigation Bar End -->
 
-    <div id="overlay" class="overlay overlay-hidden">
+    <!-- Hamburger Menu Bar Start -->
+    <div id="hamburger-menu" class="overlay overlay-hidden">
       <div class="header">
-        <button id="menu-close">
+        <button id="menu-close-button">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd"
               d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -36,15 +39,16 @@
           </svg>
         </button>
       </div>
-
+    
       <div class="navigation-container">
         <ul id="navigation-items">
-          <li class="active">Home</li>
-          <li>Projects</li>
-          <li>Contact Me</li>
+          <li class="active menu-item">Home</li>
+          <li class="menu-item">Projects</li>
+          <li class="menu-item">Contact Me</li>
         </ul>
       </div>
     </div>
+    <!-- Hamburger Menu Bar End -->
 
     <div class="content-container">
       <div class="content box-1"></div>
