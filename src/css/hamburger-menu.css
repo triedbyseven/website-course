@@ -1,4 +1,4 @@
-.component-container {
+/* .component-container {
   display: block;
   max-width: 1080px;
 }
@@ -32,7 +32,7 @@
 
 .box-5 {
   background-color: aqua;
-}
+} */
 
 #navigation-bar.container {
   position: fixed;
@@ -52,6 +52,13 @@
 }
 
 #navigation-bar button {
+  width: 46px;
+  height: 46px;
+  background-color: transparent;
+  border: none;
+}
+
+#header button {
   width: 46px;
   height: 46px;
   background-color: transparent;
@@ -118,4 +125,10 @@
   color: #FFF;
   background-color: #5e3bee;
   border-radius: 30px;
+}
+
+@media (min-width: 1024px) { 
+  #navigation-bar #menu-open-button {
+    display: none;
+  }
 }
