@@ -20,3 +20,19 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (min-width: 850px) {
+  #service .paragraph-container {
+    margin: 0 auto;
+    max-width: 596px;
+  } 
+
+  #service .t-heading4-lg-fix {
+    margin-bottom: 34px !important;
+  }
+
+  #service .cards {
+    flex-direction: row;
+    padding: 0 15px;
+  }
+}

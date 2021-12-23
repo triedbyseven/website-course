@@ -123,12 +123,12 @@
 
 /* Desktop CSS */
 @media (min-width: 1202px) {
-    #hero .inner-container {
-      padding: 0;
-    }
+  #hero .inner-container {
+    padding: 0;
+  }
 
-    #hero .paragraph {
-      font-size: 60px;
-      line-height: 1.25;
-    }
+  #hero .paragraph {
+    font-size: 60px;
+    line-height: 1.25;
+  }
 }

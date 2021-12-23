@@ -26,3 +26,10 @@
     border: 3px solid #5e3bee;
     color: #5e3bee;
 }
+
+@media (min-width: 850px) { 
+  #primary-button.button {
+      margin-bottom: 0px;
+      margin-right: 8px;
+  }
+}

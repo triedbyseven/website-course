@@ -54,3 +54,19 @@
   line-height: 32px;
   color: #121212;
 }
+
+@media (min-width: 850px) {
+  #card-services.container {
+    margin-right: 10px;
+  }
+
+  #card-services.container:nth-last-child(1) {
+    margin-right: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #card-services.container {
+    margin-right: 40px;
+  }
+}
