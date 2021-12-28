@@ -13,10 +13,6 @@
     cursor: pointer;
 }
 
-#primary-button.button span {
-    margin-left: 11px;
-}
-
 #primary-button.button:hover path {
     stroke: #5e3bee;
 }

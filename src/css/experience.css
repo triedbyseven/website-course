@@ -11,6 +11,11 @@
     box-sizing: border-box;
 }
 
+#experience .inner-container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
 #experience .row {
     display: flex;
 }
