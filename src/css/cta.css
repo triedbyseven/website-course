@@ -6,6 +6,9 @@
 }
 
 #cta .inner-container {
+  margin: 0 auto;
+  max-width: 1206px;
+  width: 100%;
   background: url('../../assets/images/background-cta.png') #f9f9fc no-repeat center center;
   background-size: cover;
   border-radius: 22px;
@@ -22,9 +25,24 @@
   letter-spacing: 1.2px;
   color: #333333;
   margin-bottom: 46px;
-}
+} 
 
 #cta .button-container {
   display: flex;
   justify-content: center;
+}
+
+#cta .button-container svg {
+  margin-right: 12px;
+}
+
+@media(min-width: 855px) {
+  #cta .inner-container {
+    background: url('../../assets/images/background-cta-large.jpg') #f9f9fc no-repeat center center;
+  }
+
+  #cta .paragraph {
+    font-size: 50px;
+    line-height: 70px;
+  }
 }

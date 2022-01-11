@@ -9,79 +9,86 @@
     margin-bottom: 30px;
 }
 
-#card-testimony .card-inner-container {
+/* #card-testimony .card-inner-container {
   
-}
+} */
 
 #card-testimony .review-stars {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
 }
 
 #card-testimony .review-stars .star {
-  width: 25px;
-  height: 25px;
-  color: #eec01c;
-  margin-right: 7px;
+    width: 25px;
+    height: 25px;
+    margin-right: 7px;
+    color: #eec01c;
 }
 
 #card-testimony .review-stars .star:nth-last-child(1) {
-  margin-right: 0px;
+    margin-right: 0px;
 }
 
 #card-testimony .review {
-  font-size: 18px;
-  font-family: 'Poppins-Medium';
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 2px;
-  color: #000;
-  margin-bottom: 38px;
+    font-size: 18px;
+    font-family: 'Poppins-Medium';
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 2px;
+    color: #000;
+    margin-bottom: 38px;
 }
 
 #card-testimony .review-author {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 #card-testimony .review-author .column-left {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 #card-testimony .review-author .column-left .circle {
-  width: 64px;
-  height: 64px;
-  background-color: #5e3bee;
-  border-radius: 100px;
-  margin-right: 18px;
+    width: 64px;
+    height: 64px;
+    background-color: #5d3bee;
+    border-radius: 100px;
+    margin-right: 18px;
 }
 
 #card-testimony .review-author .column-left .name {
-  font-size: 18px;
-  font-family: 'Poppins-Medium';
-  font-weight: 500;
-  color: #000;
-  margin-bottom: 10px;
+    font-size: 18px;
+    font-family: 'Poppins-Medium';
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 10px;
 }
 
 #card-testimony .review-author .column-left .profession {
-  opacity: 0.3;
-  font-size: 18px;
-  font-family: 'Poppins-Regular';
-  font-weight: 400;
-  color: #000;
+    opacity: 0.3;
+    font-size: 18px;
+    font-family: 'Poppins-Regular';
+    font-weight: 400;
+    color: #000;
 }
 
 #card-testimony .review-author .column-right {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 #card-testimony .review-author .column-right .message {
-  width: 42px;
-  height: 38px;
+    width: 42px;
+    height: 38px;
+}
+
+@media (min-width: 855px) {
+    #card-testimony.container {
+        max-width: 585px;
+        margin: 0 25px;
+    }
 }

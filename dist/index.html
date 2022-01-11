@@ -97,7 +97,7 @@
   <div id="hero" class="container">
     <div class="inner-container">
       <div class="row">
-        <div class="column">
+        <div id="animateColumnLeft" class="column transition opacity">
           <div class="content">
             <div class="heading">
               <h1>andrew kita</h1>
@@ -106,20 +106,22 @@
               <p>Hello, my name’s Andrew. I’m a web developer.</p>
             </div>
             <div class="buttons">
-              <button id="primary-button" class="button button-margin-bottom">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px"
-                  height="19px">
-                  <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="round"
-                    stroke-linejoin="miter" fill="none"
-                    d="M2.667,4.000 C2.667,3.558 2.842,3.134 3.155,2.821 C3.467,2.509 3.891,2.333 4.333,2.333 L17.667,2.333 C18.109,2.333 18.533,2.509 18.845,2.821 C19.158,3.134 19.333,3.558 19.333,4.000 L19.333,14.000 C19.333,14.442 19.158,14.866 18.845,15.178 C18.533,15.491 18.109,15.667 17.667,15.667 L4.333,15.667 C3.891,15.667 3.467,15.491 3.155,15.178 C2.842,14.866 2.667,14.442 2.667,14.000 L2.667,4.000 Z" />
-                  <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="round"
-                    stroke-linejoin="miter" fill="none"
-                    d="M2.667,5.666 L8.917,10.667 C9.508,11.140 10.243,11.398 11.000,11.398 C11.757,11.398 12.491,11.140 13.082,10.667 L19.333,5.666 " />
-                </svg>
-                <span>
-                  contact me
-                </span>
-              </button>
+              <a href="tel:+16263887677">
+                <button id="primary-button" class="button button-margin-bottom">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px"
+                      height="19px">
+                      <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="round"
+                        stroke-linejoin="miter" fill="none"
+                        d="M2.667,4.000 C2.667,3.558 2.842,3.134 3.155,2.821 C3.467,2.509 3.891,2.333 4.333,2.333 L17.667,2.333 C18.109,2.333 18.533,2.509 18.845,2.821 C19.158,3.134 19.333,3.558 19.333,4.000 L19.333,14.000 C19.333,14.442 19.158,14.866 18.845,15.178 C18.533,15.491 18.109,15.667 17.667,15.667 L4.333,15.667 C3.891,15.667 3.467,15.491 3.155,15.178 C2.842,14.866 2.667,14.442 2.667,14.000 L2.667,4.000 Z" />
+                      <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="round"
+                        stroke-linejoin="miter" fill="none"
+                        d="M2.667,5.666 L8.917,10.667 C9.508,11.140 10.243,11.398 11.000,11.398 C11.757,11.398 12.491,11.140 13.082,10.667 L19.333,5.666 " />
+                    </svg>
+                    <span>
+                      contact me
+                    </span>
+                </button>
+              </a>
 
               <button class="button-download-cv">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="23px" height="20px" viewBox="0 0 24 24"
@@ -146,10 +148,10 @@
 
   <!-- Experience Section -->
   <div id="experience" class="container">
-    <div id="experience" class="container">
-      <div class="row flex-direction">
+    <div class="inner-container">
+      <div class="row flex-direction row-container">
         <div class="column">
-          <div class="row flex-direction-row">
+          <div class="row flex-direction-row ">
             <div class="column">
               <p id="one">100+</p>
               <p id="two">projects</p2>
@@ -185,48 +187,19 @@
         <h3>SERVICES</h3>
       </div>
 
-      <div class="t-heading4-lg">
+      <div class="t-heading4-lg t-heading4-lg-fix">
         <h4>What I Do For My Customer.</h4>
       </div>
 
-      <div class="t-paragraph-light">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae blandit lectus. Praesent at hendrerit velit, at
-        dictum</p>
+      <div class="paragraph-container">
+        <div class="t-paragraph-light">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae blandit lectus. Praesent at hendrerit velit, at
+          dictum</p>
+        </div>
       </div>
     </div>
 
     <div class="cards">
-      <div id="card-services" class="container">
-        <div class="card-inner-container">
-      
-          <div class="icon">
-      
-            <svg class="circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px"
-              height="30px">
-              <path fill-rule="evenodd" fill="rgb(241, 240, 251)"
-                d="M15.000,30.000 C6.705,30.000 -0.000,23.295 -0.000,15.000 C-0.000,6.705 6.705,-0.000 15.000,-0.000 C23.295,-0.000 30.000,6.705 30.000,15.000 C30.000,23.295 23.295,30.000 15.000,30.000 Z" />
-            </svg>
-      
-            <svg class="pentagon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px"
-              height="34px">
-              <path fill-rule="evenodd" stroke="rgb(94, 59, 238)" stroke-width="2px" stroke-linecap="round"
-                stroke-linejoin="miter" fill="none"
-                d="M15.125,3.500 C15.657,3.074 16.318,2.842 17.000,2.842 C17.682,2.842 18.343,3.074 18.875,3.500 L30.320,12.654 C30.810,13.047 31.165,13.582 31.334,14.187 C31.504,14.791 31.480,15.434 31.265,16.023 L26.718,28.524 C26.508,29.103 26.125,29.604 25.620,29.957 C25.115,30.310 24.514,30.500 23.898,30.500 L10.101,30.500 C9.485,30.500 8.884,30.310 8.380,29.957 C7.875,29.604 7.492,29.103 7.281,28.524 L2.736,16.023 C2.522,15.434 2.497,14.791 2.667,14.187 C2.836,13.582 3.191,13.047 3.681,12.654 L15.125,3.500 Z" />
-            </svg>
-      
-          </div>
-      
-          <div class="heading">
-            UI/UX Design
-          </div>
-      
-          <div class="description">
-            lorem ipsum dolor sit amet consectur adi pising leo
-          </div>
-      
-        </div>
-      </div>
-
       <div id="card-services" class="container">
         <div class="card-inner-container">
       
@@ -328,33 +301,45 @@
 
     <div class="inner-container">
 
-      <div class="t-heading3">
-        <h3>software developer</h3>
-      </div>
+      <div class="row">
 
-      <div class="t-heading4-lg">
-        <h4>software developer with 10 years of experience</h4>
-      </div>
+        <div class="column">
+          <div class="t-heading3">
+            <h3>software developer</h3>
+          </div>
+          
+          <div class="t-heading4-lg">
+            <h4>software developer with 10 years of experience</h4>
+          </div>
+          
+          <div class="t-paragraph-dark text-center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae blandit lectus. Praesent at hendrerit velit, at
+              dictum</p>
+          </div>
+          
+          <a href="tel:+16263887677">
+            <div class="button-container">
+              <button id="primary-button" class="button button-margin-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="19px">
+                  <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="round"
+                    stroke-linejoin="miter" fill="none"
+                    d="M2.667,4.000 C2.667,3.558 2.842,3.134 3.155,2.821 C3.467,2.509 3.891,2.333 4.333,2.333 L17.667,2.333 C18.109,2.333 18.533,2.509 18.845,2.821 C19.158,3.134 19.333,3.558 19.333,4.000 L19.333,14.000 C19.333,14.442 19.158,14.866 18.845,15.178 C18.533,15.491 18.109,15.667 17.667,15.667 L4.333,15.667 C3.891,15.667 3.467,15.491 3.155,15.178 C2.842,14.866 2.667,14.442 2.667,14.000 L2.667,4.000 Z" />
+                  <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="round"
+                    stroke-linejoin="miter" fill="none"
+                    d="M2.667,5.666 L8.917,10.667 C9.508,11.140 10.243,11.398 11.000,11.398 C11.757,11.398 12.491,11.140 13.082,10.667 L19.333,5.666 " />
+                </svg>
+                <span>
+                  contact me
+                </span>
+              </button>
+            </div>
+          </a>
+        </div>
 
-      <div class="t-paragraph-dark text-center">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae blandit lectus. Praesent at hendrerit velit, at
-        dictum</p>
-      </div>
+        <div class="column">
+        
+        </div>
 
-      <div class="button-container">
-        <button id="primary-button" class="button button-margin-bottom">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="19px">
-            <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="round"
-              stroke-linejoin="miter" fill="none"
-              d="M2.667,4.000 C2.667,3.558 2.842,3.134 3.155,2.821 C3.467,2.509 3.891,2.333 4.333,2.333 L17.667,2.333 C18.109,2.333 18.533,2.509 18.845,2.821 C19.158,3.134 19.333,3.558 19.333,4.000 L19.333,14.000 C19.333,14.442 19.158,14.866 18.845,15.178 C18.533,15.491 18.109,15.667 17.667,15.667 L4.333,15.667 C3.891,15.667 3.467,15.491 3.155,15.178 C2.842,14.866 2.667,14.442 2.667,14.000 L2.667,4.000 Z" />
-            <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="round"
-              stroke-linejoin="miter" fill="none"
-              d="M2.667,5.666 L8.917,10.667 C9.508,11.140 10.243,11.398 11.000,11.398 C11.757,11.398 12.491,11.140 13.082,10.667 L19.333,5.666 " />
-          </svg>
-          <span>
-            contact me
-          </span>
-        </button>
       </div>
 
     </div>
@@ -386,51 +371,82 @@
   <!-- Portfolio Section  -->
   <div id="portfolio" class="container">
     <div class="inner-container">
-      <div class="heading3">
-        <h3>Portfolio</h3>
+
+      <div class="content">
+        <div class="row">
+          <div class="column">
+            <div class="heading3">
+              <h3>Portfolio</h3>
+            </div>
+      
+            <div class="heading4">
+              <h4>Selected Works.</h4>
+            </div>
+          </div>
+  
+          <div class="column">
+            <div class="paragraph">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae blandit lectus. Praesent at hendrerit velit, at
+              dictum nisl.</p>
+            </div>
+          </div>  
+        </div>
       </div>
 
-      <div class="heading4">
-        <h4>Selected Works.</h4>
-      </div>
-    
-      <div class="paragraph">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae blandit lectus. Praesent at hendrerit velit, at
-        dictum nisl.</p>
-      </div>
     
       <div class="selected-works">
-        <div class="selected-work-card">
-          <div class="image"></div>
-          <div class="info">
-            <div class="title">Creativa - Elementor Template Kit</div>
-            <div class="type">UI/UX Design</div>
+
+        <div class="row">
+
+          <div class="column">
+            <div class="selected-work-card">
+              <div class="image">
+                <img src="https://images.unsplash.com/photo-1535303311164-664fc9ec6532?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"/>
+              </div>
+              <div class="info">
+                <div class="title">Creativa - Elementor Template Kit</div>
+                <div class="type">UI/UX Design</div>
+              </div>
+            </div>
+    
+            <div class="selected-work-card">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1535303311164-664fc9ec6532?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+              </div>
+              <div class="info">
+                <div class="title">Creativa - Elementor Template Kit</div>
+                <div class="type">UI/UX Design</div>
+              </div>
+            </div>
           </div>
+          
+          <div class="column">
+            <div class="selected-work-card">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1535303311164-664fc9ec6532?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+              </div>
+              <div class="info">
+                <div class="title">Creativa - Elementor Template Kit</div>
+                <div class="type">UI/UX Design</div>
+              </div>
+            </div>
+    
+            <div class="selected-work-card">
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1535303311164-664fc9ec6532?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+              </div>
+              <div class="info">
+                <div class="title">Creativa - Elementor Template Kit</div>
+                <div class="type">UI/UX Design</div>
+              </div>
+            </div>
+          </div>
+  
         </div>
 
-        <div class="selected-work-card">
-          <div class="image"></div>
-          <div class="info">
-            <div class="title">Creativa - Elementor Template Kit</div>
-            <div class="type">UI/UX Design</div>
-          </div>
-        </div>
-
-        <div class="selected-work-card">
-          <div class="image"></div>
-          <div class="info">
-            <div class="title">Creativa - Elementor Template Kit</div>
-            <div class="type">UI/UX Design</div>
-          </div>
-        </div>
-
-        <div class="selected-work-card">
-          <div class="image"></div>
-          <div class="info">
-            <div class="title">Creativa - Elementor Template Kit</div>
-            <div class="type">UI/UX Design</div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -438,155 +454,161 @@
   <!-- Testimony Section  -->
   <div id="testimony" class="container">
     <div class="inner-container">
-      <div class="t-heading3">
-        <h3>Testimony</h3>
+      <div class="spacing-container">
+        <div class="t-heading3">
+          <h3>Testimony</h3>
+        </div>
+  
+        <div class="t-heading4">
+          <h4>what our clients say.</h4>
+        </div>
+  
+        <div class="t-paragraph-light">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae blandit lectus. Praesent at hendrerit
+            velit, at dictum nisl.</p>
+        </div>
       </div>
-
-      <div class="t-heading4">
-        <h4>what our clients say.</h4>
-      </div>
-
-      <div class="t-paragraph-light">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae blandit lectus. Praesent at hendrerit velit, at
-        dictum nisl.</p>
-      </div>
-
-      <div id="card-testimony" class="container">
-        <div class="card-inner-container">
-      
-          <div class="review-stars">
-            <div class="star">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-              </svg>
-            </div>
-      
-            <div class="star">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-              </svg>
-            </div>
-      
-            <div class="star">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-              </svg>
-            </div>
-      
-            <div class="star">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-              </svg>
-            </div>
-      
-            <div class="star">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-              </svg>
-            </div>
-          </div>
-      
-          <div class="review">
-            <p>Nulla nunc orci, suscipit vitae rutrum vitae, sagittis eget dui. Vestibulum nisl lorem, porta at mollis varius,
-              tincidunt in lectus. Nam pulvinar auctor sem ac dictum. Ut sed felis urna.</p>
-          </div>
-      
-          <div class="review-author">
-            <div class="column-left">
-              <div class="circle"></div>
-              <div>
-                <div class="name">David Gueta</div>
-                <div class="profession">UI/UX Designer</div>
-              </div>
-            </div>
-      
-            <div class="column-right">
-              <div class="message">
-                <svg id="Frame" xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="#5e3bee"
-                  viewBox="0 0 39.76 36.75">
-                  <path id="Vector" stroke-width="2"
-                    d="M2163.25,6095.62a16.47,16.47,0,0,0-7.2,2.15c-3.75,1.95-5.62,2.92-6.54,2.3s-0.75-2.54-.4-6.38l0.08-.88"
-                    transform="translate(-2139.62 -6064.5)" />
-                  <path id="Vector-2" data-name="Vector" stroke-width="2"
-                    d="M2163.25,6095.62c7.07,0,10.61,0,12.8-2.19s2.2-5.73,2.2-12.81,0-10.6-2.2-12.8-5.73-2.2-12.8-2.2h-7.5c-7.07,0-10.61,0-12.8,2.2s-2.2,5.73-2.2,12.8,0,10.61,2.2,12.81c1.22,1.22,2.86,1.77,5.3,2"
-                    transform="translate(-2139.62 -6064.5)" />
+  
+      <div class="row">
+        <div id="card-testimony" class="container">
+          <div class="card-inner-container">
+  
+            <div class="review-stars">
+              <div class="star">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                 </svg>
+              </div>
+  
+              <div class="star">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                </svg>
+              </div>
+  
+              <div class="star">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                </svg>
+              </div>
+  
+              <div class="star">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                </svg>
+              </div>
+  
+              <div class="star">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                </svg>
+              </div>
+  
+            </div>
+  
+            <div class="review">
+              <p>Nulla nunc orci, suscipit vitae rutrum vitae, sagittis eget dui. Vestibulum nisl lorem, porta at mollis
+                varius, tincidunt in lectus. Nam pulvinar auctor sem ac dictum. Ut sed felis urna.</p>
+            </div>
+  
+            <div class="review-author">
+              <div class="column-left">
+                <div class="circle"></div>
+                <div>
+                  <div class="name">David Guetta</div>
+                  <div class="profession">UI/Ux Designer</div>
+                </div>
+              </div>
+  
+              <div class="column-right">
+                <div class="message">
+                  <svg id="Frame" xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="#5e3bee"
+                    viewBox="0 0 39.76 36.75">
+                    <path id="Vector" stroke-width="2"
+                      d="M2163.25,6095.62a16.47,16.47,0,0,0-7.2,2.15c-3.75,1.95-5.62,2.92-6.54,2.3s-0.75-2.54-.4-6.38l0.08-.88"
+                      transform="translate(-2139.62 -6064.5)" />
+                    <path id="Vector-2" data-name="Vector" stroke-width="2"
+                      d="M2163.25,6095.62c7.07,0,10.61,0,12.8-2.19s2.2-5.73,2.2-12.81,0-10.6-2.2-12.8-5.73-2.2-12.8-2.2h-7.5c-7.07,0-10.61,0-12.8,2.2s-2.2,5.73-2.2,12.8,0,10.61,2.2,12.81c1.22,1.22,2.86,1.77,5.3,2"
+                      transform="translate(-2139.62 -6064.5)" />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    
-      <div id="card-testimony" class="container">
-        <div class="card-inner-container">
-      
-          <div class="review-stars">
-            <div class="star">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-              </svg>
-            </div>
-      
-            <div class="star">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-              </svg>
-            </div>
-      
-            <div class="star">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-              </svg>
-            </div>
-      
-            <div class="star">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-              </svg>
-            </div>
-      
-            <div class="star">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-              </svg>
-            </div>
-          </div>
-      
-          <div class="review">
-            <p>Nulla nunc orci, suscipit vitae rutrum vitae, sagittis eget dui. Vestibulum nisl lorem, porta at mollis varius,
-              tincidunt in lectus. Nam pulvinar auctor sem ac dictum. Ut sed felis urna.</p>
-          </div>
-      
-          <div class="review-author">
-            <div class="column-left">
-              <div class="circle"></div>
-              <div>
-                <div class="name">David Gueta</div>
-                <div class="profession">UI/UX Designer</div>
-              </div>
-            </div>
-      
-            <div class="column-right">
-              <div class="message">
-                <svg id="Frame" xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="#5e3bee"
-                  viewBox="0 0 39.76 36.75">
-                  <path id="Vector" stroke-width="2"
-                    d="M2163.25,6095.62a16.47,16.47,0,0,0-7.2,2.15c-3.75,1.95-5.62,2.92-6.54,2.3s-0.75-2.54-.4-6.38l0.08-.88"
-                    transform="translate(-2139.62 -6064.5)" />
-                  <path id="Vector-2" data-name="Vector" stroke-width="2"
-                    d="M2163.25,6095.62c7.07,0,10.61,0,12.8-2.19s2.2-5.73,2.2-12.81,0-10.6-2.2-12.8-5.73-2.2-12.8-2.2h-7.5c-7.07,0-10.61,0-12.8,2.2s-2.2,5.73-2.2,12.8,0,10.61,2.2,12.81c1.22,1.22,2.86,1.77,5.3,2"
-                    transform="translate(-2139.62 -6064.5)" />
+  
+        <div id="card-testimony" class="container">
+          <div class="card-inner-container">
+  
+            <div class="review-stars">
+              <div class="star">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                 </svg>
+              </div>
+  
+              <div class="star">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                </svg>
+              </div>
+  
+              <div class="star">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                </svg>
+              </div>
+  
+              <div class="star">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                </svg>
+              </div>
+  
+              <div class="star">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                </svg>
+              </div>
+  
+            </div>
+  
+            <div class="review">
+              <p>Nulla nunc orci, suscipit vitae rutrum vitae, sagittis eget dui. Vestibulum nisl lorem, porta at mollis
+                varius, tincidunt in lectus. Nam pulvinar auctor sem ac dictum. Ut sed felis urna.</p>
+            </div>
+  
+            <div class="review-author">
+              <div class="column-left">
+                <div class="circle"></div>
+                <div>
+                  <div class="name">David Guetta</div>
+                  <div class="profession">UI/Ux Designer</div>
+                </div>
+              </div>
+  
+              <div class="column-right">
+                <div class="message">
+                  <svg id="Frame" xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="#5e3bee"
+                    viewBox="0 0 39.76 36.75">
+                    <path id="Vector" stroke-width="2"
+                      d="M2163.25,6095.62a16.47,16.47,0,0,0-7.2,2.15c-3.75,1.95-5.62,2.92-6.54,2.3s-0.75-2.54-.4-6.38l0.08-.88"
+                      transform="translate(-2139.62 -6064.5)" />
+                    <path id="Vector-2" data-name="Vector" stroke-width="2"
+                      d="M2163.25,6095.62c7.07,0,10.61,0,12.8-2.19s2.2-5.73,2.2-12.81,0-10.6-2.2-12.8-5.73-2.2-12.8-2.2h-7.5c-7.07,0-10.61,0-12.8,2.2s-2.2,5.73-2.2,12.8,0,10.61,2.2,12.81c1.22,1.22,2.86,1.77,5.3,2"
+                      transform="translate(-2139.62 -6064.5)" />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
@@ -601,7 +623,7 @@
     <div class="inner-container">
 
       <div class="paragraph">
-        <p>Interested <br /> In Working <br /> With me? <br /> Let's connect!</p>
+        <p>Interested In Working <br /> With me? Let's connect!</p>
       </div>
 
       <div class="button-container">
@@ -629,63 +651,114 @@
 
     <div class="inner-container">
 
-      <div class="logo">
-        <img src="../assets/images/logo-footer.jpg" alt="footer logo" />
+      <div class="contact-section">
+      
+        <div class="row">
+
+          <div class="column">
+
+            <div class="company-info">
+              <div class="logo">
+                <img src="../assets/images/logo-footer.jpg" alt="footer logo" />
+              </div>
+              
+              <div class="paragraph">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae blandit lectus. Praesent at hendrerit.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="column contact">
+
+            <div class="contact-container">
+              <div class="contact-info">
+                <ul>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="19px">
+                      <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="round"
+                        stroke-linejoin="miter" fill="none"
+                        d="M2.667,4.000 C2.667,3.558 2.842,3.134 3.155,2.821 C3.467,2.509 3.891,2.333 4.333,2.333 L17.667,2.333 C18.109,2.333 18.533,2.509 18.845,2.821 C19.158,3.134 19.333,3.558 19.333,4.000 L19.333,14.000 C19.333,14.442 19.158,14.866 18.845,15.178 C18.533,15.491 18.109,15.666 17.667,15.666 L4.333,15.666 C3.891,15.666 3.467,15.491 3.155,15.178 C2.842,14.866 2.667,14.442 2.667,14.000 L2.667,4.000 Z" />
+                      <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="round"
+                        stroke-linejoin="miter" fill="none"
+                        d="M2.667,5.667 L8.917,10.667 C9.509,11.140 10.243,11.398 11.000,11.398 C11.757,11.398 12.491,11.140 13.082,10.667 L19.333,5.667 " />
+                    </svg>
+                    inquiry@portostar.com
+                </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="23px">
+                      <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="round"
+                        stroke-linejoin="miter" fill="none"
+                        d="M9.795,6.200 L6.976,2.946 C6.651,2.570 6.055,2.572 5.677,2.951 L3.359,5.273 C2.669,5.964 2.472,6.990 2.871,7.812 C5.255,12.750 9.237,16.737 14.172,19.129 C14.993,19.528 16.018,19.331 16.708,18.640 L19.048,16.295 C19.427,15.917 19.428,15.317 19.050,14.992 L15.783,12.188 C15.442,11.895 14.911,11.933 14.568,12.276 L13.432,13.415 C13.373,13.476 13.297,13.516 13.213,13.529 C13.130,13.542 13.045,13.528 12.971,13.488 C11.113,12.418 9.572,10.875 8.504,9.016 C8.464,8.941 8.450,8.856 8.463,8.772 C8.476,8.689 8.516,8.612 8.577,8.554 L9.711,7.420 C10.054,7.075 10.092,6.541 9.795,6.199 L9.795,6.200 Z" />
+                    </svg>
+                    <a href="tel:+16263887677">(626) 388 7677</a>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="social-media">
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px">
+                      <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                        d="M-0.000,12.067 C-0.000,18.033 4.333,22.994 10.000,24.000 L10.000,15.333 L7.000,15.333 L7.000,12.000 L10.000,12.000 L10.000,9.333 C10.000,6.333 11.933,4.667 14.667,4.667 C15.533,4.667 16.467,4.800 17.333,4.933 L17.333,8.000 L15.800,8.000 C14.333,8.000 14.000,8.733 14.000,9.667 L14.000,12.000 L17.200,12.000 L16.667,15.333 L14.000,15.333 L14.000,24.000 C19.667,22.994 24.000,18.034 24.000,12.067 C24.000,5.430 18.600,-0.000 12.000,-0.000 C5.400,-0.000 -0.000,5.430 -0.000,12.067 Z" />
+                    </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="22px">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                          d="M21.934,15.535 C21.881,16.705 21.694,17.505 21.422,18.205 C21.146,18.939 20.713,19.604 20.154,20.154 C19.604,20.714 18.939,21.146 18.206,21.422 C17.506,21.694 16.706,21.880 15.536,21.934 C14.362,21.988 13.988,22.000 11.000,22.000 C8.012,22.000 7.638,21.987 6.465,21.934 C5.295,21.881 4.495,21.694 3.795,21.422 C3.061,21.146 2.396,20.713 1.846,20.154 C1.286,19.604 0.853,18.940 0.577,18.206 C0.306,17.506 0.120,16.706 0.066,15.536 C0.012,14.361 -0.000,13.987 -0.000,11.000 C-0.000,8.012 0.013,7.638 0.066,6.466 C0.119,5.294 0.306,4.494 0.577,3.794 C0.854,3.060 1.287,2.395 1.847,1.846 C2.396,1.286 3.060,0.853 3.794,0.577 C4.494,0.306 5.294,0.120 6.464,0.066 L6.465,0.066 C7.638,0.012 8.012,-0.000 11.000,-0.000 C13.988,-0.000 14.362,0.013 15.534,0.066 C16.706,0.119 17.506,0.306 18.206,0.577 C18.939,0.854 19.604,1.287 20.154,1.847 C20.714,2.396 21.146,3.060 21.422,3.794 C21.694,4.494 21.880,5.294 21.934,6.464 C21.988,7.639 22.000,8.013 22.000,11.000 C22.000,13.988 21.987,14.362 21.934,15.535 ZM19.954,6.555 C19.905,5.482 19.726,4.900 19.575,4.512 C19.375,3.999 19.138,3.632 18.753,3.247 C18.398,2.882 17.966,2.601 17.488,2.425 C17.100,2.274 16.518,2.095 15.445,2.046 C14.285,1.993 13.937,1.982 11.000,1.982 C8.063,1.982 7.715,1.993 6.555,2.046 C5.482,2.095 4.900,2.274 4.512,2.425 C3.999,2.625 3.632,2.862 3.247,3.247 C2.882,3.602 2.601,4.034 2.425,4.512 C2.274,4.900 2.095,5.482 2.046,6.555 C1.993,7.715 1.982,8.063 1.982,11.000 C1.982,13.937 1.993,14.285 2.046,15.445 C2.095,16.518 2.274,17.100 2.425,17.488 C2.601,17.965 2.882,18.398 3.247,18.753 C3.602,19.118 4.035,19.399 4.512,19.575 C4.900,19.726 5.482,19.905 6.555,19.954 C7.715,20.007 8.062,20.018 11.000,20.018 C13.938,20.018 14.285,20.007 15.445,19.954 C16.518,19.905 17.100,19.726 17.488,19.575 C18.001,19.375 18.368,19.138 18.753,18.753 C19.118,18.398 19.399,17.965 19.575,17.488 C19.726,17.100 19.905,16.518 19.954,15.445 C20.007,14.285 20.018,13.937 20.018,11.000 C20.018,8.063 20.007,7.715 19.954,6.555 ZM17.908,6.188 C17.655,6.426 17.319,6.557 16.971,6.552 C16.623,6.547 16.291,6.407 16.045,6.160 C15.799,5.915 15.659,5.583 15.654,5.235 C15.649,4.887 15.779,4.551 16.018,4.298 C16.141,4.168 16.288,4.064 16.452,3.992 C16.616,3.919 16.792,3.881 16.971,3.878 C17.150,3.876 17.327,3.909 17.493,3.976 C17.659,4.044 17.809,4.143 17.936,4.270 C18.062,4.396 18.162,4.547 18.229,4.712 C18.297,4.878 18.330,5.056 18.327,5.235 C18.325,5.414 18.286,5.590 18.214,5.754 C18.142,5.918 18.038,6.065 17.908,6.188 ZM16.654,11.000 C16.654,11.742 16.508,12.477 16.224,13.164 C15.939,13.849 15.523,14.473 14.998,14.998 C13.938,16.058 12.499,16.654 11.000,16.654 C9.500,16.654 8.062,16.058 7.002,14.998 C5.942,13.938 5.346,12.499 5.346,11.000 C5.346,9.500 5.942,8.062 7.002,7.002 C7.527,6.477 8.150,6.060 8.836,5.776 C9.522,5.492 10.257,5.346 11.000,5.346 C11.742,5.346 12.478,5.492 13.164,5.776 C13.850,6.060 14.473,6.477 14.998,7.002 C15.523,7.527 15.939,8.150 16.224,8.836 C16.508,9.522 16.654,10.257 16.654,11.000 ZM14.656,10.641 C14.572,9.795 14.197,9.005 13.595,8.405 C13.211,8.021 12.747,7.728 12.236,7.545 C11.725,7.362 11.180,7.295 10.640,7.348 C10.100,7.402 9.579,7.574 9.114,7.853 C8.648,8.132 8.251,8.511 7.949,8.962 C7.648,9.413 7.450,9.925 7.370,10.462 C7.291,10.998 7.331,11.546 7.489,12.065 C7.646,12.584 7.916,13.062 8.281,13.464 C8.645,13.867 9.094,14.183 9.595,14.391 C10.380,14.717 11.253,14.762 12.067,14.515 C12.880,14.269 13.583,13.749 14.056,13.042 C14.528,12.335 14.740,11.487 14.656,10.641 Z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                          d="M16.000,20.000 L16.000,13.688 C16.000,11.475 15.465,10.227 14.103,10.227 C12.214,10.227 11.429,11.572 11.429,13.687 L11.429,20.000 L7.429,20.000 L7.429,6.969 L11.143,6.969 L11.143,8.819 C11.678,7.755 13.050,6.799 15.111,6.799 C19.062,6.799 20.000,8.917 20.000,12.803 L20.000,20.000 L16.000,20.000 ZM4.390,4.352 C3.906,4.833 3.252,5.102 2.570,5.100 C1.889,5.099 1.236,4.831 0.752,4.353 C0.514,4.116 0.325,3.836 0.196,3.526 C0.067,3.217 0.001,2.885 -0.000,2.550 C-0.000,1.873 0.270,1.225 0.753,0.747 C1.237,0.268 1.890,-0.001 2.571,-0.000 C3.253,-0.000 3.907,0.269 4.390,0.747 C4.872,1.225 5.143,1.873 5.143,2.550 C5.143,2.885 5.077,3.217 4.947,3.527 C4.818,3.836 4.629,4.116 4.390,4.352 ZM4.570,19.830 L0.570,19.830 L0.570,6.799 L4.570,6.799 L4.570,19.830 Z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                          d="M12.000,24.000 C5.375,24.000 -0.000,18.625 -0.000,12.000 C-0.000,5.375 5.375,-0.000 12.000,-0.000 C18.612,-0.000 24.000,5.375 24.000,12.000 C24.000,18.625 18.612,24.000 12.000,24.000 ZM22.100,13.640 C21.748,13.523 18.937,12.690 15.722,13.197 C17.063,16.881 17.610,19.874 17.714,20.499 C20.017,18.950 21.657,16.490 22.100,13.640 ZM12.000,22.256 C13.419,22.256 14.772,21.970 16.009,21.436 C15.852,20.538 15.267,17.401 13.822,13.666 C13.797,13.679 13.783,13.679 13.757,13.692 C7.978,15.709 5.896,19.718 5.714,20.096 C7.445,21.449 9.631,22.256 12.000,22.256 ZM1.744,12.013 C1.744,14.541 2.680,16.980 4.373,18.859 C4.607,18.468 7.419,13.809 12.703,12.104 C12.833,12.065 12.976,12.026 13.106,11.987 C12.846,11.401 12.573,10.816 12.274,10.243 C7.158,11.779 2.187,11.714 1.744,11.701 L1.744,12.013 ZM1.965,9.905 C2.420,9.905 6.650,9.931 11.440,8.655 C9.735,5.636 7.913,3.098 7.640,2.733 C4.777,4.087 2.629,6.729 1.965,9.905 ZM12.000,1.771 L12.000,1.770 C11.189,1.767 10.381,1.859 9.592,2.043 C9.879,2.433 11.739,4.959 13.419,8.043 C17.063,6.677 18.612,4.607 18.794,4.347 C16.985,2.746 14.603,1.771 12.000,1.771 ZM19.926,5.531 C19.705,5.818 17.987,8.030 14.213,9.566 C14.451,10.054 14.677,10.549 14.889,11.050 C14.967,11.232 15.032,11.414 15.111,11.584 C18.521,11.154 21.905,11.844 22.243,11.909 C22.221,9.581 21.403,7.330 19.926,5.531 Z" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="paragraph">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae blandit lectus. Praesent at hendrerit.</p>
-      </div>
-
-      <div class="contact-info">
-        <ul>
-          <li>inquiry@portostar.com</li>
-          <li>(001) 1231 3435</li>
-        </ul>
-      </div>
-
-      <div class="social-media">
-        <ul>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px">
-              <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
-              d="M-0.000,12.067 C-0.000,18.033 4.333,22.994 10.000,24.000 L10.000,15.333 L7.000,15.333 L7.000,12.000 L10.000,12.000 L10.000,9.333 C10.000,6.333 11.933,4.667 14.667,4.667 C15.533,4.667 16.467,4.800 17.333,4.933 L17.333,8.000 L15.800,8.000 C14.333,8.000 14.000,8.733 14.000,9.667 L14.000,12.000 L17.200,12.000 L16.667,15.333 L14.000,15.333 L14.000,24.000 C19.667,22.994 24.000,18.034 24.000,12.067 C24.000,5.430 18.600,-0.000 12.000,-0.000 C5.400,-0.000 -0.000,5.430 -0.000,12.067 Z" />
-            </svg>
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="22px">
-              <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
-                d="M21.934,15.535 C21.881,16.705 21.694,17.505 21.422,18.205 C21.146,18.939 20.713,19.604 20.154,20.154 C19.604,20.714 18.939,21.146 18.206,21.422 C17.506,21.694 16.706,21.880 15.536,21.934 C14.362,21.988 13.988,22.000 11.000,22.000 C8.012,22.000 7.638,21.987 6.465,21.934 C5.295,21.881 4.495,21.694 3.795,21.422 C3.061,21.146 2.396,20.713 1.846,20.154 C1.286,19.604 0.853,18.940 0.577,18.206 C0.306,17.506 0.120,16.706 0.066,15.536 C0.012,14.361 -0.000,13.987 -0.000,11.000 C-0.000,8.012 0.013,7.638 0.066,6.466 C0.119,5.294 0.306,4.494 0.577,3.794 C0.854,3.060 1.287,2.395 1.847,1.846 C2.396,1.286 3.060,0.853 3.794,0.577 C4.494,0.306 5.294,0.120 6.464,0.066 L6.465,0.066 C7.638,0.012 8.012,-0.000 11.000,-0.000 C13.988,-0.000 14.362,0.013 15.534,0.066 C16.706,0.119 17.506,0.306 18.206,0.577 C18.939,0.854 19.604,1.287 20.154,1.847 C20.714,2.396 21.146,3.060 21.422,3.794 C21.694,4.494 21.880,5.294 21.934,6.464 C21.988,7.639 22.000,8.013 22.000,11.000 C22.000,13.988 21.987,14.362 21.934,15.535 ZM19.954,6.555 C19.905,5.482 19.726,4.900 19.575,4.512 C19.375,3.999 19.138,3.632 18.753,3.247 C18.398,2.882 17.966,2.601 17.488,2.425 C17.100,2.274 16.518,2.095 15.445,2.046 C14.285,1.993 13.937,1.982 11.000,1.982 C8.063,1.982 7.715,1.993 6.555,2.046 C5.482,2.095 4.900,2.274 4.512,2.425 C3.999,2.625 3.632,2.862 3.247,3.247 C2.882,3.602 2.601,4.034 2.425,4.512 C2.274,4.900 2.095,5.482 2.046,6.555 C1.993,7.715 1.982,8.063 1.982,11.000 C1.982,13.937 1.993,14.285 2.046,15.445 C2.095,16.518 2.274,17.100 2.425,17.488 C2.601,17.965 2.882,18.398 3.247,18.753 C3.602,19.118 4.035,19.399 4.512,19.575 C4.900,19.726 5.482,19.905 6.555,19.954 C7.715,20.007 8.062,20.018 11.000,20.018 C13.938,20.018 14.285,20.007 15.445,19.954 C16.518,19.905 17.100,19.726 17.488,19.575 C18.001,19.375 18.368,19.138 18.753,18.753 C19.118,18.398 19.399,17.965 19.575,17.488 C19.726,17.100 19.905,16.518 19.954,15.445 C20.007,14.285 20.018,13.937 20.018,11.000 C20.018,8.063 20.007,7.715 19.954,6.555 ZM17.908,6.188 C17.655,6.426 17.319,6.557 16.971,6.552 C16.623,6.547 16.291,6.407 16.045,6.160 C15.799,5.915 15.659,5.583 15.654,5.235 C15.649,4.887 15.779,4.551 16.018,4.298 C16.141,4.168 16.288,4.064 16.452,3.992 C16.616,3.919 16.792,3.881 16.971,3.878 C17.150,3.876 17.327,3.909 17.493,3.976 C17.659,4.044 17.809,4.143 17.936,4.270 C18.062,4.396 18.162,4.547 18.229,4.712 C18.297,4.878 18.330,5.056 18.327,5.235 C18.325,5.414 18.286,5.590 18.214,5.754 C18.142,5.918 18.038,6.065 17.908,6.188 ZM16.654,11.000 C16.654,11.742 16.508,12.477 16.224,13.164 C15.939,13.849 15.523,14.473 14.998,14.998 C13.938,16.058 12.499,16.654 11.000,16.654 C9.500,16.654 8.062,16.058 7.002,14.998 C5.942,13.938 5.346,12.499 5.346,11.000 C5.346,9.500 5.942,8.062 7.002,7.002 C7.527,6.477 8.150,6.060 8.836,5.776 C9.522,5.492 10.257,5.346 11.000,5.346 C11.742,5.346 12.478,5.492 13.164,5.776 C13.850,6.060 14.473,6.477 14.998,7.002 C15.523,7.527 15.939,8.150 16.224,8.836 C16.508,9.522 16.654,10.257 16.654,11.000 ZM14.656,10.641 C14.572,9.795 14.197,9.005 13.595,8.405 C13.211,8.021 12.747,7.728 12.236,7.545 C11.725,7.362 11.180,7.295 10.640,7.348 C10.100,7.402 9.579,7.574 9.114,7.853 C8.648,8.132 8.251,8.511 7.949,8.962 C7.648,9.413 7.450,9.925 7.370,10.462 C7.291,10.998 7.331,11.546 7.489,12.065 C7.646,12.584 7.916,13.062 8.281,13.464 C8.645,13.867 9.094,14.183 9.595,14.391 C10.380,14.717 11.253,14.762 12.067,14.515 C12.880,14.269 13.583,13.749 14.056,13.042 C14.528,12.335 14.740,11.487 14.656,10.641 Z" />
-            </svg>
-          </li>
-          <li>  
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px">
-              <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
-                d="M16.000,20.000 L16.000,13.688 C16.000,11.475 15.465,10.227 14.103,10.227 C12.214,10.227 11.429,11.572 11.429,13.687 L11.429,20.000 L7.429,20.000 L7.429,6.969 L11.143,6.969 L11.143,8.819 C11.678,7.755 13.050,6.799 15.111,6.799 C19.062,6.799 20.000,8.917 20.000,12.803 L20.000,20.000 L16.000,20.000 ZM4.390,4.352 C3.906,4.833 3.252,5.102 2.570,5.100 C1.889,5.099 1.236,4.831 0.752,4.353 C0.514,4.116 0.325,3.836 0.196,3.526 C0.067,3.217 0.001,2.885 -0.000,2.550 C-0.000,1.873 0.270,1.225 0.753,0.747 C1.237,0.268 1.890,-0.001 2.571,-0.000 C3.253,-0.000 3.907,0.269 4.390,0.747 C4.872,1.225 5.143,1.873 5.143,2.550 C5.143,2.885 5.077,3.217 4.947,3.527 C4.818,3.836 4.629,4.116 4.390,4.352 ZM4.570,19.830 L0.570,19.830 L0.570,6.799 L4.570,6.799 L4.570,19.830 Z" />
-            </svg>
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px">
-              <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
-                d="M12.000,24.000 C5.375,24.000 -0.000,18.625 -0.000,12.000 C-0.000,5.375 5.375,-0.000 12.000,-0.000 C18.612,-0.000 24.000,5.375 24.000,12.000 C24.000,18.625 18.612,24.000 12.000,24.000 ZM22.100,13.640 C21.748,13.523 18.937,12.690 15.722,13.197 C17.063,16.881 17.610,19.874 17.714,20.499 C20.017,18.950 21.657,16.490 22.100,13.640 ZM12.000,22.256 C13.419,22.256 14.772,21.970 16.009,21.436 C15.852,20.538 15.267,17.401 13.822,13.666 C13.797,13.679 13.783,13.679 13.757,13.692 C7.978,15.709 5.896,19.718 5.714,20.096 C7.445,21.449 9.631,22.256 12.000,22.256 ZM1.744,12.013 C1.744,14.541 2.680,16.980 4.373,18.859 C4.607,18.468 7.419,13.809 12.703,12.104 C12.833,12.065 12.976,12.026 13.106,11.987 C12.846,11.401 12.573,10.816 12.274,10.243 C7.158,11.779 2.187,11.714 1.744,11.701 L1.744,12.013 ZM1.965,9.905 C2.420,9.905 6.650,9.931 11.440,8.655 C9.735,5.636 7.913,3.098 7.640,2.733 C4.777,4.087 2.629,6.729 1.965,9.905 ZM12.000,1.771 L12.000,1.770 C11.189,1.767 10.381,1.859 9.592,2.043 C9.879,2.433 11.739,4.959 13.419,8.043 C17.063,6.677 18.612,4.607 18.794,4.347 C16.985,2.746 14.603,1.771 12.000,1.771 ZM19.926,5.531 C19.705,5.818 17.987,8.030 14.213,9.566 C14.451,10.054 14.677,10.549 14.889,11.050 C14.967,11.232 15.032,11.414 15.111,11.584 C18.521,11.154 21.905,11.844 22.243,11.909 C22.221,9.581 21.403,7.330 19.926,5.531 Z" />
-            </svg>
-          </li>
-        </ul>
-      </div>
-
-      <div class="border"></div>
-
-      <div class="links">
-        <ul>
-          <li>home</li>
-          <li>about us</li>
-          <li>servies</li>
-          <li>works</li>
-        </ul>
-      </div>
-
-      <div class="copyright">
-        © All Right Reserved
+      <div class="info-section">
+        <div class="border"></div>
+        <div class="row">
+          <div class="column">
+            <div class="links">
+              <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">about us</a></li>
+                <li><a href="">services</a></li>
+                <li><a href="">works</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="column">
+            <div class="copyright">
+              © All Right Reserved
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
