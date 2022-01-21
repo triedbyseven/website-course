@@ -4,4 +4,3 @@ import mountScrollOnRevealEventListener from './modules/global/scroll';
 
 mountScrollOnRevealEventListener();
 loadHamburgerMenu();
-loadHeroAnimations();

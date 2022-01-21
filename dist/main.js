@@ -7,7 +7,6 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/index.js":
@@ -16,7 +15,8 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_navigation_hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/navigation/hamburger */ \"./src/modules/navigation/hamburger/index.js\");\n/* harmony import */ var _modules_animations_hero__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/animations/hero */ \"./src/modules/animations/hero/index.js\");\n/* harmony import */ var _modules_global_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/global/scroll */ \"./src/modules/global/scroll/index.js\");\n\n\n\n(0,_modules_global_scroll__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n(0,_modules_navigation_hamburger__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n(0,_modules_animations_hero__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//# sourceURL=webpack://my-webpack-project/./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_navigation_hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/navigation/hamburger */ \"./src/modules/navigation/hamburger/index.js\");\n/* harmony import */ var _modules_animations_hero__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/animations/hero */ \"./src/modules/animations/hero/index.js\");\n/* harmony import */ var _modules_animations_hero__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_animations_hero__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _modules_global_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/global/scroll */ \"./src/modules/global/scroll/index.js\");\n\n\n\n(0,_modules_global_scroll__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n(0,_modules_navigation_hamburger__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack://my-webpack-project/./src/index.js?");
 
 /***/ }),
 
@@ -24,9 +24,20 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 /*!**********************************************!*\
   !*** ./src/modules/animations/hero/index.js ***!
   \**********************************************/
+/***/ (() => {
+
+eval("// const animationState = {\n//   hasAnimated: false\n// };\n// function delayAnimation(node, className, delayTime) {\n//   setTimeout(() => {\n//     node.classList.remove(className);\n//   }, delayTime);\n// };\n// function delayAnimations(nodes, delayTime) {\n//   console.log('nodes: ', nodes);\n//   setTimeout(() => {\n//     for (let index = 0; index < nodes.length; index++) {\n//       delayAnimation(nodes[index], 'opacity', index * 100);\n//     }\n//   }, delayTime);\n// }\n// function loadHeroAnimations() {\n//   if ( animationState.hasAnimated ) return;\n//   console.log('Hero animations loaded!');\n//   animationState.hasAnimated = !animationState.hasAnimated;\n//   console.log('animationState.hasAnimated', animationState.hasAnimated);\n//   const serviceHeadingElement = document.getElementById('serviceHeading');\n//   const serviceSubHeadingElement = document.getElementById('serviceSubHeading');\n//   const serviceContentElement = document.getElementById('serviceContent');\n//   const cardServicesElements = document.querySelectorAll('#card-services');\n//   delayAnimation(serviceHeadingElement, 'opacity', 0);\n//   delayAnimation(serviceSubHeadingElement, 'opacity', 500);\n//   delayAnimation(serviceContentElement, 'opacity', 1000);\n//   delayAnimations(cardServicesElements, 1500);\n// };\n// export default loadHeroAnimations;\n\n//# sourceURL=webpack://my-webpack-project/./src/modules/animations/hero/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/animations/services/index.js":
+/*!**************************************************!*\
+  !*** ./src/modules/animations/services/index.js ***!
+  \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction delayAnimation(node, className, delayTime) {\n  setTimeout(function () {\n    node.classList.remove(className);\n  }, delayTime);\n}\n\n;\n\nfunction loadHeroAnimations() {\n  console.log('Hero animations loaded!'); // const animateHeadingElement = document.getElementById('animateHeading');\n  // const animateParagraphElement = document.getElementById('animateParagraph');\n  // const animateButtonsElement = document.getElementById('animateButtons');\n  // delayAnimation(animateHeadingElement, 'opacity', 1000);\n  // delayAnimation(animateParagraphElement, 'opacity', 1250);\n  // delayAnimation(animateButtonsElement, 'opacity', 1500);\n}\n\n;\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadHeroAnimations);\n\n//# sourceURL=webpack://my-webpack-project/./src/modules/animations/hero/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar animationState = {\n  hasAnimated: false\n};\n\nfunction delayAnimation(node, className, delayTime) {\n  setTimeout(function () {\n    node.classList.remove(className);\n  }, delayTime);\n}\n\n;\n\nfunction delayAnimations(nodes, delayTime) {\n  setTimeout(function () {\n    for (var index = nodes.length; index > nodes.length; index--) {\n      delayAnimation(nodes[index], 'opacity', index * 100);\n    }\n  }, delayTime);\n}\n\n;\n\nfunction loadServiceAnimations() {\n  if (animationState.hasAnimated) return;\n  console.log('Service animations loaded!');\n  animationState.hasAnimated = !animationState.hasAnimated;\n  var serviceHeadingElement = document.getElementById('serviceHeading');\n  var serviceSubHeadingElement = document.getElementById('serviceSubHeading');\n  var serviceContentElement = document.getElementById('serviceContent');\n  var cardServicesElements = document.querySelectorAll('#card-services');\n  delayAnimation(serviceHeadingElement, 'opacity', 0);\n  delayAnimation(serviceSubHeadingElement, 'opacity', 500);\n  delayAnimation(serviceContentElement, 'opacity', 1000);\n  delayAnimations(cardServicesElements, 1500);\n}\n\n;\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadServiceAnimations);\n\n//# sourceURL=webpack://my-webpack-project/./src/modules/animations/services/index.js?");
 
 /***/ }),
 
@@ -36,7 +47,8 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction mountScrollOnRevealEventListener() {\n  window.addEventListener('scroll', onScrollEventListener());\n}\n\n;\n\nfunction onScrollEventListener(data) {\n  return function () {\n    var scrollable = document.documentElement.scrollHeight - window.innerHeight;\n    var scrolledTo = Math.ceil(window.scrollY + window.innerHeight / 2);\n    reveal(scrolledTo);\n    console.log('Scrolling...', scrolledTo, scrollable);\n  };\n}\n\n;\n\nfunction reveal(scrolledTo) {\n  var revealElements = document.querySelectorAll('.reveal');\n\n  for (var index = 0; index < revealElements.length; index++) {\n    var revealTopElement = revealElements[index].offsetTop;\n\n    if (scrolledTo > revealTopElement) {\n      revealElements[index].classList.add('active');\n    } else {\n      revealElements[index].classList.remove('active');\n    }\n  }\n\n  ;\n}\n\n;\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (mountScrollOnRevealEventListener); // function onScrollEventListener() {\n//   return function () {\n//     const scrollable = document.documentElement.scrollHeight - window.innerHeight;\n//     const scrolledTo = Math.ceil(window.scrollY + (window.innerHeight / 2));\n//     reveal(scrolledTo);\n//     console.log('Scrolling...', scrolledTo, scrollable);\n//   };\n// };\n// function reveal(scrolledTo) {\n//   const revealElements = document.querySelectorAll('.reveal');\n//   for (let index = 0; index < revealElements.length; index++) {\n//     const revealTopElement = revealElements[index].offsetTop;\n//     if (scrolledTo > revealTopElement) {\n//       revealElements[index].classList.add('active');\n//     } else {\n//       revealElements[index].classList.remove('active');\n//     }\n//   };\n// };\n\n//# sourceURL=webpack://my-webpack-project/./src/modules/global/scroll/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _animations_services__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../animations/services */ \"./src/modules/animations/services/index.js\");\n\n\nfunction mountScrollOnRevealEventListener() {\n  window.addEventListener('scroll', onScrollEventListener());\n}\n\n;\n\nfunction onScrollEventListener(data) {\n  return function () {\n    var scrollable = document.documentElement.scrollHeight - window.innerHeight;\n    var scrolledTo = Math.ceil(window.scrollY + window.innerHeight / 2);\n    reveal(scrolledTo); // console.log('Scrolling...', scrolledTo, scrollable);\n  };\n}\n\n;\n\nfunction reveal(scrolledTo) {\n  var revealElements = document.querySelectorAll('.reveal');\n\n  for (var index = 0; index < revealElements.length; index++) {\n    var revealTopElement = revealElements[index].offsetTop;\n\n    if (scrolledTo > revealTopElement) {\n      revealElements[index].classList.add('active'); // console.log(revealElements[index].id);\n\n      onAnimate(revealElements[index].id);\n    } else {\n      revealElements[index].classList.remove('active');\n    }\n  }\n\n  ;\n}\n\n;\n\nfunction onAnimate(revealElementID) {\n  if (revealElementID === 'service') (0,_animations_services__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n}\n\n;\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (mountScrollOnRevealEventListener);\n\n//# sourceURL=webpack://my-webpack-project/./src/modules/global/scroll/index.js?");
 
 /***/ }),
 
@@ -46,6 +58,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"overlayElement\": () => (/* binding */ overlayElement),\n/* harmony export */   \"isToggled\": () => (/* binding */ isToggled),\n/* harmony export */   \"current\": () => (/* binding */ current),\n/* harmony export */   \"setIsToggled\": () => (/* binding */ setIsToggled),\n/* harmony export */   \"setCurrent\": () => (/* binding */ setCurrent)\n/* harmony export */ });\nvar overlayElement = document.getElementById('hamburger-menu');\nvar isToggled = false;\nvar current = 0; // Setters\n\nfunction setIsToggled(toggleValue) {\n  isToggled = toggleValue;\n}\n;\nfunction setCurrent(currentValue) {\n  current = currentValue;\n}\n;\n\n//# sourceURL=webpack://my-webpack-project/./src/modules/navigation/hamburger/global.js?");
 
 /***/ }),
@@ -56,6 +69,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _global__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./global */ \"./src/modules/navigation/hamburger/global.js\");\n/* harmony import */ var _menu_toggle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu-toggle */ \"./src/modules/navigation/hamburger/menu-toggle.js\");\nfunction _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }\n\nfunction _nonIterableSpread() { throw new TypeError(\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _iterableToArray(iter) { if (typeof Symbol !== \"undefined\" && iter[Symbol.iterator] != null || iter[\"@@iterator\"] != null) return Array.from(iter); }\n\nfunction _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\n\n\n\nfunction loadHamburgerMenu() {\n  var menuItemsElement = document.getElementsByClassName('menu-item');\n\n  var menuItems = _toConsumableArray(menuItemsElement);\n\n  menuItems.forEach(function (menuItem, index) {\n    return menuItem.onclick = function () {\n      menuItems[_global__WEBPACK_IMPORTED_MODULE_0__.current].classList.remove('active');\n      (0,_global__WEBPACK_IMPORTED_MODULE_0__.setCurrent)(index);\n      menuItem.classList.add('active');\n    };\n  });\n}\n\n;\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadHamburgerMenu);\n\n//# sourceURL=webpack://my-webpack-project/./src/modules/navigation/hamburger/index.js?");
 
 /***/ }),
@@ -66,6 +80,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"menuOpenElement\": () => (/* binding */ menuOpenElement),\n/* harmony export */   \"menuCloseElement\": () => (/* binding */ menuCloseElement)\n/* harmony export */ });\n/* harmony import */ var _global__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./global */ \"./src/modules/navigation/hamburger/global.js\");\n\nvar menuOpenElement = document.getElementById('menu-open-button');\nvar menuCloseElement = document.getElementById('menu-close-button');\n\nmenuOpenElement.onclick = function () {\n  (0,_global__WEBPACK_IMPORTED_MODULE_0__.setIsToggled)(!_global__WEBPACK_IMPORTED_MODULE_0__.isToggled);\n  _global__WEBPACK_IMPORTED_MODULE_0__.overlayElement.classList.remove('overlay-hidden');\n  _global__WEBPACK_IMPORTED_MODULE_0__.overlayElement.classList.add('overlay-shown');\n};\n\nmenuCloseElement.onclick = function () {\n  (0,_global__WEBPACK_IMPORTED_MODULE_0__.setIsToggled)(!_global__WEBPACK_IMPORTED_MODULE_0__.isToggled);\n  _global__WEBPACK_IMPORTED_MODULE_0__.overlayElement.classList.remove('overlay-shown');\n  _global__WEBPACK_IMPORTED_MODULE_0__.overlayElement.classList.add('overlay-hidden');\n};\n\n//# sourceURL=webpack://my-webpack-project/./src/modules/navigation/hamburger/menu-toggle.js?");
 
 /***/ })
@@ -97,6 +112,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
