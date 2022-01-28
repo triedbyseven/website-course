@@ -1,4 +1,5 @@
 import loadServiceAnimations from '../../animations/services';
+import loadAboutAnimations from '../../animations/about';
 
 function mountScrollOnRevealEventListener() {
   window.addEventListener('scroll', onScrollEventListener());
@@ -6,10 +7,8 @@ function mountScrollOnRevealEventListener() {
 
 function onScrollEventListener(data) {
   return function () {
-    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
     const scrolledTo = Math.ceil(window.scrollY + (window.innerHeight / 2));
     reveal(scrolledTo);
-    // console.log('Scrolling...', scrolledTo, scrollable);
   };
 };
 
@@ -20,17 +19,16 @@ function reveal(scrolledTo) {
     const revealTopElement = revealElements[index].offsetTop;
 
     if (scrolledTo > revealTopElement) {
-      revealElements[index].classList.add('active');
-      // console.log(revealElements[index].id);
-      onAnimate(revealElements[index].id);
+      onAnimate(revealElements[index].id, true);
     } else {
-      revealElements[index].classList.remove('active');
+      onAnimate(revealElements[index].id, false);
     }
   };
 };
 
-function onAnimate(revealElementID) {
-  if ( revealElementID === 'service' ) loadServiceAnimations();
+function onAnimate(revealElementID, isScrolledTo) {
+  if (revealElementID === 'service') loadServiceAnimations(isScrolledTo);
+  if (revealElementID === 'about') loadAboutAnimations(isScrolledTo);
 };
 
 export default mountScrollOnRevealEventListener;

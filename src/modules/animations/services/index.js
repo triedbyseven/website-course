@@ -1,36 +1,33 @@
 const animationState = {
-  hasAnimated: false
+  hasAnimatedUp: false,
+  hasAnimatedDown: false,
+  direciton: null
 };
 
-function delayAnimation(node, className, delayTime) {
+function delayAnimation(node, className, delayTime, isScrolledTo) {
   setTimeout(() => {
-    node.classList.remove(className);
+    isScrolledTo ? node.classList.remove(className) : node.classList.add(className);
   }, delayTime);
 };
 
-function delayAnimations(nodes, delayTime) {
+function delayAnimations(nodes, delayTime, isScrolledTo) {
   setTimeout(() => {
-    for ( let index = nodes.length; index > nodes.length; index-- ) {
-      delayAnimation(nodes[index], 'opacity', index * 100); 
+    for ( let index = 0; index < nodes.length; index++ ) {
+      delayAnimation(nodes[index], 'opacity', index * 100, isScrolledTo); 
     }
   }, delayTime);
 };
 
-function loadServiceAnimations() {
-  if ( animationState.hasAnimated ) return;
-
-  console.log('Service animations loaded!');
-  animationState.hasAnimated = !animationState.hasAnimated;
-
+function loadServiceAnimations(isScrolledTo) {
   const serviceHeadingElement = document.getElementById('serviceHeading');
   const serviceSubHeadingElement = document.getElementById('serviceSubHeading');
   const serviceContentElement = document.getElementById('serviceContent');
   const cardServicesElements = document.querySelectorAll('#card-services');
 
-  delayAnimation(serviceHeadingElement, 'opacity', 0);
-  delayAnimation(serviceSubHeadingElement, 'opacity', 500);
-  delayAnimation(serviceContentElement, 'opacity', 1000);
-  delayAnimations(cardServicesElements, 1500);
+  delayAnimation(serviceHeadingElement, 'opacity', 0, isScrolledTo);
+  delayAnimation(serviceSubHeadingElement, 'opacity', 150, isScrolledTo);
+  delayAnimation(serviceContentElement, 'opacity', 300, isScrolledTo);
+  delayAnimations(cardServicesElements, 450, isScrolledTo);
 };
 
 export default loadServiceAnimations;

@@ -1,3 +1,14 @@
+#about .transition {
+  position: relative;
+  transition: 0.5s ease-in-out;
+  left: 0px;
+}
+
+#about .animate {
+  opacity: 0;
+  left: 100px !important;
+}
+
 #about.container {
     background-color: #F9F9FC;
     padding: 110px 0;
@@ -28,9 +39,23 @@
     margin-bottom: 40px;
 }
 
+#about a {
+  display: block;
+}
+
 #about .button-container {
     display: flex;
     justify-content: center;
+}
+
+#about .image {
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+#about .image img {
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 855px) {
