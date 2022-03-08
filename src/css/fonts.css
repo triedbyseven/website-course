@@ -1,31 +1,31 @@
 @font-face {
   font-family: "Poppins-Bold";
   font-weight: 700;
-  src: url("../assets/fonts/Poppins-Bold.ttf") format("ttf"),
-       url("../assets/fonts/Poppins-Bold.woff") format("woff"),
-       url("../assets/fonts/Poppins-Bold.woff2") format("woff2");
+  src: url("../../../assets/fonts/Poppins-Bold.ttf") format("ttf"),
+       url('../../../assets/fonts/Poppins-Bold.woff') format('woff'),
+       url("../../../assets/fonts/Poppins-Bold.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Poppins-SemiBold";
   font-weight: 600;
-  src: url("../assets/fonts/Poppins-SemiBold.ttf") format("ttf"),
-       url("../assets/fonts/Poppins-SemiBold.woff") format("woff"),
-       url("../assets/fonts/Poppins-SemiBold.woff2") format("woff2");
+  src: url("../../../assets/fonts/Poppins-SemiBold.ttf") format("ttf"),
+       url("../../../assets/fonts/Poppins-SemiBold.woff") format("woff"),
+       url("../../../assets/fonts/Poppins-SemiBold.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Poppins-Medium";
   font-weight: 500;
-  src: url("../assets/fonts/Poppins-Medium.ttf") format("ttf"), 
-       url("../assets/fonts/Poppins-Medium.woff") format("woff"),
-       url("../assets/fonts/Poppins-Medium.woff2") format("woff2");
+  src: url("../../../assets/fonts/Poppins-Medium.ttf") format("ttf"), 
+       url("../../../assets/fonts/Poppins-Medium.woff") format("woff"),
+       url("../../../assets/fonts/Poppins-Medium.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Poppins-Regular";
   font-weight: 400;
-  src: url("../assets/fonts/Poppins-Regular.ttf") format("ttf"),
-       url("../assets/fonts/Poppins-Regular.woff") format("woff"),
-       url("../assets/fonts/Poppins-Regular.woff2") format("woff2");
+  src: url("../../../assets/fonts/Poppins-Regular.ttf") format("ttf"),
+       url("../../../assets/fonts/Poppins-Regular.woff") format("woff"),
+       url("../../../assets/fonts/Poppins-Regular.woff2") format("woff2");
 }

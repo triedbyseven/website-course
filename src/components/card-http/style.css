@@ -1,0 +1,82 @@
+#button {
+  font-family: 'Poppins-Regular';
+  color: #FFF;
+  background-color: #0070F3;
+  outline: 0;
+  border: none;
+  border-bottom: 4px solid aqua;
+  padding: 14px 10px 10px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#loader {
+  transition: 0.5s ease-in-out;
+  opacity:0;
+}
+
+#loader.pikatchu-spinner {
+  opacity: 1;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+}
+
+#loader.active {
+  opacity: 1;
+}
+
+#loader img.pikatchu {
+  width: 200px;
+}
+
+#card.card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  max-width: 638px;
+  width: 100%;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05) !important;
+  border-radius: 0.25rem!important;
+  overflow: hidden;
+}
+
+#card .image {
+  width: 245px;
+  height: 328px;
+}
+
+.image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#card .content {
+  flex: 1;
+  padding: 16px 24px;
+  background-color: #FFF
+}
+
+#card .content .heading {
+  font-size: 1.25rem;
+  font-family: 'Poppins-Bold';
+  font-weight: 700;
+  line-height: 1.625;
+  color: #4a5568;
+  margin-bottom: 8px;
+}
+
+#card .content p {
+  font-size: 16px;
+  font-family: 'Poppins-Regular';
+  font-weight: 400;
+  line-height: 1.625;
+  color: #4a5568;
+}

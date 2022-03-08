@@ -1,0 +1,137 @@
+#button {
+  font-family: 'Poppins-Regular';
+  color: #FFF;
+  background-color: #0070F3;
+  outline: 0;
+  border: none;
+  border-bottom: 4px solid aqua;
+  padding: 14px 10px 10px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#github.container {
+  width: 100%;
+  background-color: transparent;
+  padding: 110px 0;
+}
+
+#github .inner-container {
+    margin: 0 auto;
+    max-width: 1206px;
+    padding: 0 0;
+}
+
+#github .row {
+    display: flex;
+}
+
+#github .column {
+    width: 100%;
+}
+
+#github .t-heading3  {
+  text-align: left;
+  padding: 0 50px;
+}
+
+#github .t-heading4-lg {
+  text-align: left;
+  color: #333333 !important;
+  padding: 0 50px;
+}
+
+#github .t-paragraph-dark {
+    padding: 0 50px;
+    margin-bottom: 40px;
+}
+
+.github-projects .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.github-projects .column {
+  width: inherit !important;
+  margin-right: 25px;
+}
+
+.github-projects .card {
+  overflow: hidden;
+  max-width: 384px;
+  min-height: 420px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05)!important;
+}
+
+.github-projects .card .image {
+  width: 100%;
+  height: 234px;
+}
+
+.github-projects .card .image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.github-projects .card .content {
+  padding: 16px 24px;
+}
+
+.github-projects .card .content .title {
+  font-size: 24px;
+  font-family: 'Poppins-Bold';
+  font-weight: 700;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.github-projects .card .content .paragraph { 
+  opacity: 0.4;
+  min-height: 72px;
+  font-size: 16px;
+  font-family: 'Poppins-Medium';
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000;
+}
+
+.github-projects .card .topics { 
+  overflow-x: scroll;
+  box-sizing: border-box;
+  display: inline-flex;
+  max-width: 384px;
+  width: 100%;
+  padding: 8px 24px 16px 24px;
+}
+
+.github-projects .card .topic { 
+  flex-shrink: 0;
+  font-family: 'Poppins-Medium';
+  font-weight: 500;
+  line-height: 1.5;
+  color: #5e3bee;
+  border: 2px solid #5e3bee;
+  border-radius: 9999px;
+  padding: 4px 12px;
+  margin-right: 8px;
+}
+
+.github-projects .card .topic:last-child {
+  margin-right: 0px;
+}
+
+.github-projects a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+@media (min-width: 855px) {
+  #github .t-heading3, #github .t-heading4-lg, #github .t-paragraph-dark {
+    text-align: left;
+  }
+}

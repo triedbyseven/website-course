@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Components - Hamburger Menu</title>
+  <link rel="stylesheet" href="../../css/normalize.css" />
+  <link rel="stylesheet" href="../../css//fonts.css" />
+  <link rel="stylesheet" href="../../css/typography.css" />
+  <link rel="stylesheet" href="../../css/center-content.css" />
+  <link rel="stylesheet" href="./style.css" />
+
+</head>
+
+<body style="background-color: #f7f7fa">
+  <div style="position: absolute; top: 0; left: 0; text-align: center; margin-top: 30px; width: 100%">
+    <button id="button">Pull Pokemon Card</button>
+  </div>
+  <div class="component-container">
+
+    <div id="card" class="card">
+      <div id="loader"></div>
+      <div id="image" class="image">
+        <img src="https://images.unsplash.com/photo-1542779283-429940ce8336?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" alt="metro-night" />
+      </div>
+      <div id="content" class="content">
+        <div id="heading" class="heading">No Pokemon Selected</div>
+        <p>Rarity: <span id="rarity">???</span></p>
+        <p>HP: <span id="hp">???</span></p>
+      </div>
+    </div>
+    
+  </div>
+  <!-- <script type="text/javascript" src="../../../dist/main.js"></script> -->
+  <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
