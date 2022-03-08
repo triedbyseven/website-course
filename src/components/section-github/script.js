@@ -1,72 +1,12 @@
-
-const apiUrl = 'https://api.github.com/graphql';
-const apiToken = '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';
+import { checkCache, storeCache } from "./utils.js";
+import { apiToken, apiUrl } from "./modules/api/credentials.js";
+import { getViewerRepository } from "./modules/api/github.js";
 
 document.getElementById('button').addEventListener('click', onClickHandler);
 
-function getAllRepositories(apiUrl, apiToken) {
-  return new Promise(function (resolve, reject) {
-    const HTTP = new XMLHttpRequest();
-
-    HTTP.open('POST', apiUrl);
-    HTTP.setRequestHeader('Authorization', 'Bearer ' + apiToken);
-    HTTP.setRequestHeader('Content-Type', 'application/json');
-
-    const QUERY = {
-      query: `{
-        viewer {
-          anyPinnableItems
-          bio
-          followers(first: 1) {
-            nodes {
-              name
-              email
-            }
-            totalCount
-          }
-          pinnedItems(first: 6) {
-            nodes {
-              ... on Repository {
-                name
-                description
-                url
-                openGraphImageUrl
-                repositoryTopics(first: 6) {
-                  nodes {
-                    resourcePath
-                    topic {
-                      name
-                    }
-                    url
-                  }
-                }
-              }
-            }
-            totalCount
-          }
-        }
-      }`
-    };
-
-    HTTP.onload = function () {
-      if ( HTTP.status === 200 ) {
-        const responseJSON = JSON.parse(HTTP.responseText);
-
-        resolve(responseJSON);
-      }
-    };
-
-    HTTP.onerror = function () {
-      reject(new Error('GraphQL network error occured.'));
-    };
-
-    HTTP.send(JSON.stringify(QUERY));
-  });
-};
-
 function renderTopics(topics, node) {
   let fragment = document.createDocumentFragment();
-  
+
 
   topics.forEach((topic) => {
     const topicDiv = document.createElement('div');
@@ -80,7 +20,40 @@ function renderTopics(topics, node) {
 };
 
 async function onClickHandler() {
-  const response = await getAllRepositories(apiUrl, apiToken);
+  let gitHubCache = checkCache('@GitHub');
+  gitHubCache = JSON.parse(gitHubCache);
+
+  console.log('GitHubCache', gitHubCache);
+
+  if (gitHubCache) {
+    const githubCardNode = document.getElementById('github-card');
+    const anchorNode = githubCardNode.children[0];
+    const imageNode = githubCardNode.children[0].children[0].children[0];
+    const titleNode = githubCardNode.children[0].children[1].children[0];
+    const paragraphNode = githubCardNode.children[0].children[1].children[1];
+    const topicsNode = githubCardNode.children[0].children[2];
+
+    anchorNode.href = gitHubCache.url;
+    imageNode.src = gitHubCache.openGraphImageUrl;
+    titleNode.innerText = gitHubCache.name.replaceAll('-', ' ');
+    paragraphNode.innerText = gitHubCache.description;
+
+    renderTopics(gitHubCache.topics, topicsNode);
+
+    return;
+  };
+
+  const response = await getViewerRepository(apiUrl, apiToken);
+
+  const cachedObject = {
+    url: response.data.viewer.pinnedItems.nodes[0].url,
+    openGraphImageUrl: response.data.viewer.pinnedItems.nodes[0].openGraphImageUrl,
+    name: response.data.viewer.pinnedItems.nodes[0].name,
+    description: response.data.viewer.pinnedItems.nodes[0].description,
+    topics: response.data.viewer.pinnedItems.nodes[0].repositoryTopics.nodes
+  };
+
+  storeCache('@GitHub', JSON.stringify(cachedObject));
   
   const githubCardNode = document.getElementById('github-card');
   const anchorNode = githubCardNode.children[0];

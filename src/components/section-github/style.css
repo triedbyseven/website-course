@@ -100,13 +100,19 @@
   color: #000;
 }
 
-.github-projects .card .topics { 
+#github .github-projects .card .topics { 
   overflow-x: scroll;
   box-sizing: border-box;
   display: inline-flex;
   max-width: 384px;
   width: 100%;
   padding: 8px 24px 16px 24px;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+}
+
+#github .github-projects .card .topics::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
 }
 
 .github-projects .card .topic { 
