@@ -1,5 +1,5 @@
 const apiUrl = 'https://api.github.com/graphql';
-const apiToken = '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';
+const apiToken = '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';
 
 export {
   apiUrl,
