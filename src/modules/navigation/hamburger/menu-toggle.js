@@ -1,4 +1,4 @@
-import { overlayElement, isToggled, setIsToggled } from './global';
+import { overlayElement, isToggled, setIsToggled } from './global.js';
 
 export const menuOpenElement = document.getElementById('menu-open-button');
 export const menuCloseElement = document.getElementById('menu-close-button');

@@ -1,0 +1,148 @@
+.reveal {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.active {
+  opacity: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button-margin-bottom {
+    margin-bottom: 10px;
+}
+
+#hero .row {
+    display: flex;
+    flex-direction: column;
+}
+
+.column {
+    width: 100%;
+}
+
+.margin-right-24 {
+    margin-right: 24px;
+}
+
+#hero.container {
+    background-color: #F9F9FC;
+    padding: 50px 0; /* padding: 142px 0; desktop*/
+}
+
+#hero .inner-container {
+    margin: 0 auto;
+    max-width: 1202px;
+    width:  100%;
+}
+
+#hero .content {
+    display: flex;
+    flex-direction: column;
+}
+
+#hero .heading {
+    margin-bottom: 20px; /* 46px desktop */
+}
+#hero .heading h1 {
+    font-size: 16px;
+    font-family: "Poppins-Medium";
+    font-weight: 500;
+    text-align: center; /* text-align: left */
+    text-transform: uppercase;
+    color: #5e3bee;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+#hero .paragraph {
+    box-sizing: border-box;
+    max-width: 510px;
+    width: 100%; 
+    font-size: 40px; /*font-size: 60px;*/
+    font-family: "Poppins-Bold";
+    font-weight: 700;
+    text-align: center; /* text-align: left*/
+    line-height: 1.6;
+    color: #333;
+    padding: 0 10px;
+    margin: 0 auto 30px auto;
+}
+
+#hero .paragraph p {
+    margin: 0;
+}
+
+#hero .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero .hero-image {
+    margin-top: 55px;
+    padding: 0 10px;
+}
+
+#hero img {
+    width: 100%;
+}
+
+/* Table CSS */
+@media (min-width: 850px) {
+    #hero .inner-container {
+        box-sizing: border-box;
+        /* padding: 0 60px; */
+    }
+
+    #hero .row {
+        flex-direction: row;
+    }
+
+    #hero .content {
+        height: 100%;
+        justify-content: center;
+    }
+
+    #hero .heading h1 {
+        text-align: left;
+    }
+
+    #hero .paragraph {
+        text-align: left; 
+        padding: 0;
+        margin: 0 0 30px 0;
+    }
+
+    #hero .buttons {
+        flex-direction: row;
+    }
+
+    #hero .hero-image {
+        margin-top: 0px;
+    }
+}
+
+
+/*Laptop CSS */
+@media (min-width: 1024px) {
+  #hero.container {
+    padding: 50px 25px;
+  }
+
+    /* #hero .inner-container {
+        padding: 0 121px;
+    } */
+}
+
+
+/* Desktop CSS */
+@media (min-width: 1202px) {
+  #hero .paragraph {
+    font-size: 60px;
+    line-height: 1.35;
+  }
+}

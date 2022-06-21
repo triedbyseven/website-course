@@ -1,5 +1,5 @@
-import { current, setCurrent } from './global';
-import { menuOpenElement, menuCloseElement } from './menu-toggle';
+import { current, setCurrent } from './global.js';
+import { menuOpenElement, menuCloseElement } from './menu-toggle.js';
 
 function loadHamburgerMenu() {
   const menuItemsElement = document.getElementsByClassName('menu-item');

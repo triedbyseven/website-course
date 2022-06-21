@@ -1,6 +1,7 @@
-import loadServiceAnimations from '../../animations/services';
-import loadAboutAnimations from '../../animations/about';
-import loadGithubAnimations from '../../animations/github';
+import loadServiceAnimations from '../../animations/services/index.js';
+import loadAboutAnimations from '../../animations/about/index.js';
+import loadPortfolioAnimations from "../../animations/portfolio/index.js";
+import loadGithubAnimations from '../../animations/github/index.js';
 
 function mountScrollOnRevealEventListener() {
   window.addEventListener('scroll', onScrollEventListener());
@@ -30,6 +31,7 @@ function reveal(scrolledTo) {
 function onAnimate(revealElementID, isScrolledTo) {
   if (revealElementID === 'service') loadServiceAnimations(isScrolledTo);
   if (revealElementID === 'about') loadAboutAnimations(isScrolledTo);
+  if (revealElementID === 'portfolio') loadPortfolioAnimations(isScrolledTo);
   if (revealElementID === 'github') loadGithubAnimations(isScrolledTo);
 };
 
